@@ -1,0 +1,29 @@
+{
+  "name": "dashboard-calendar-day",
+  "version": "0.0.1",
+  "authors": [
+    "Barrett K. Harber <barrett.harber@gmail.com>"
+  ],
+  "description": "A calendar day web component.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "dashboard-calendar-day.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/DashboardElements/dashboard-calendar-day",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "dashboard-calendar-behavior": "DashboardElements/dashboard-calendar-behavior",
+    "dashboard-layout": "DashboardElements/dashboard-layout"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.0.0"
+  }
+}
