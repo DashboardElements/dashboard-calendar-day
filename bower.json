@@ -8,7 +8,9 @@
   "keywords": [
     "web-component",
     "polymer",
-    "seed"
+    "dashboard",
+    "calendar",
+    "day"
   ],
   "main": "dashboard-calendar-day.html",
   "license": "http://polymer.github.io/LICENSE.txt",
@@ -19,8 +21,8 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.2.0",
-    "dashboard-calendar-behavior": "DashboardElements/dashboard-calendar-behavior",
-    "dashboard-layout": "DashboardElements/dashboard-layout"
+    "dashboard-calendar-behavior": "dashboard-calendar-behavior#^0.0.2",
+    "dashboard-layout": "dashboard-layout#^0.0.1"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
