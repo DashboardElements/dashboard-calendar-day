@@ -1,0 +1,63 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../dashboard-layout/dashboard-layout.html">
+<link rel="import" href="../dashboard-calendar-behavior/dashboard-calendar-behavior.html">
+
+<!--
+Displays a calendar day.
+
+Example:
+
+    <dashboard-calendar-day></dashboard-calendar-day>
+
+@demo demo/index.html
+@hero hero.svg
+-->
+
+<dom-module id="dashboard-calendar-day">
+  <template>
+    <style>
+      :host {
+        @apply(--layout-vertical);
+        @apply(--layout-center-center);
+        @apply(--height-4);
+        @apply(--width-4);
+        @apply(--buffer);
+        font-size: calc(var(--unit) * var(--font-units, 4) * 2.8 / 16);
+      }
+
+      div {
+        @apply(--layout-flex);
+        @apply(--layout-horizontal);
+        @apply(--layout-center);
+      }
+
+      #day {
+        @apply(--layout-flex-2);
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+    </style>
+    <div>[[_weekDayName(weekDay)]]</div>
+    <div id="day">[[day]]</div>
+    <div>[[_monthName(month)]]</div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'dashboard-calendar-day',
+
+      behaviors: [Dashboard.CalendarBehavior]
+    });
+  </script>
+</dom-module>
